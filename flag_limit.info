@@ -1,0 +1,6 @@
+name = Flag Limit
+description = Limits the number of flagged items at any time.
+core = 6.x
+version = 6.x-1.0
+dependencies[] = flag
+package = Flags
