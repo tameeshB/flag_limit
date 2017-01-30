@@ -11,23 +11,6 @@
  * move from the rotator, into a list of unflagged content below.
  */
  
-/**
- * Implements hook_menu().
- */
-function flag_limit_menu() {
-  $items = array();
-
-  $items['admin/build/flags/limits'] = array(
-    'title' => 'Limits',
-    'description' => 'Configure limits on the number of flagged items.',
-    'page callback' => 'drupal_get_form',
-    'page arguments' => array('flag_limit_settings_form'),
-    'access arguments' => array('administer flags'),
-    'type' => MENU_LOCAL_TASK,
-  );
-
-  return $items;
-}
 
 /**
  * Flag settings form.

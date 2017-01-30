@@ -1,0 +1,8 @@
+name: Flag Limit
+description: Limits the number of flagged items at any time.
+type: module
+core: 8.x
+package: Flags
+configure: flag_limit.form
+dependencies:  
+  - flag

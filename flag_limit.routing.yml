@@ -1,0 +1,13 @@
+scroll_to_top.menu:
+  title: 'Limits'
+  description: 'Configure limits on the number of flagged items.'
+  parent: system.admin_config_ui
+  route_name: flag_limit.form
+
+flag_limit.form:
+  path: 'admin/build/flags/limits'
+  defaults:
+    _title: 'Limits'
+    _form: '\Drupal\flag_limit\Form\flaglimitForm'
+  requirements:
+    _permission: 'access administration pages'
